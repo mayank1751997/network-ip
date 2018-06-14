@@ -1,0 +1,5 @@
+ipconfig
+ipconfig /all
+ipconfig/release
+ipconfig/renew
+exit
