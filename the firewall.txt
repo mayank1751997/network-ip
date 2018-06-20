@@ -1,0 +1,13 @@
+resettting the firewall
+
+1.Disconnect the server from the Internet.
+2.Restart the server in single-user mode by holding down the Command–s keys during startup.
+3.Remove or rename the address groups file found at /etc/ipfilter/ip_address_groups.plist.
+4.Remove or rename the ipfw configuration file found at /etc/ipfilter/ipfw.conf.
+5.Force-flush the firewall rules by entering the following in Terminal:
+$ ipfw -f flush
+6.Edit the /etc/hostconfig file and set IPFILTER=-YES-.
+7.Complete the startup sequence in the login window by entering exit:
+the computer starts up with the default firewall rules and firewall enabled. Use Server Admin to refine the firewall configuration.
+8.Log in to your server’s local administrator account to confirm that the firewall is restored to its default configuration.
+9.Reconnect your host to the Internet.
